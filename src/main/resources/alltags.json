@@ -1,0 +1,549 @@
+[ {
+  "Title" : "Derek Banas",
+  "Description" : "I make tutorials based on your requests. I will cover any topic you can imagine. I upload new programming videos on Saturday and Wednesday morning. I Live Stream at 8PM EST on Monday and at 7PM EST on Tuesday, Thursday and Friday.",
+  "Thumb" : "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/user/derekbanas/playlists",
+  "PublishedAt" : "2008-08-12T15:35:35.000Z",
+  "Type" : "YouTubeChannel",
+  "ID" : 0,
+  "$$hashKey" : "object:18",
+  "Tags" : "QuickDives",
+  "Comments" : "Ken: A YouTubeChannel with dozens of compact, comprehensive tutorials on dozens of computer languages, DBs, frameworks.  It's a good place to get an initial overview.",
+  "Tree" : ""
+}, {
+  "Title" : "Istio Platform vs Spring and MicroProfile Frameworks - Ozzy Osborne, IBM UK",
+  "Description" : "Istio Platform vs Spring and MicroProfile Frameworks - Ozzy Osborne, IBM UK\n\nIstio is an open platform which aims to provide a uniform way to connect, manage and secure microservices. However, these are capabilities that are already provided by a variety of programming frameworks, such as Netflix OSS and MicroProfile fault tolerance. Can a platform really know everything about an application, or does the application sometimes know better?\n\nIn this session Ozzy will start with an introduction to the Istio architecture, including the sidecar model and what it means to deploy your application in this way. He will cover the technologies that overlap with existing framework capabilities such as security and fault tolerance. The differences between the approaches will be highlighted, including when to use which and how you can make them work in harmony together.\n\nIstio also provides capabilities that compliment existing microservice and cloud native architectures. He will cover some of these functions, such as smart routing to enable A/B testing and canary deployments, together with how to make use of them within this new platform. \n\nAbout avatar for Ozzy Osborne\nOzzy has over two decades of experience in Enterprise Software Development for IBM, mainly working with Java based technologies and enterprise middleware. An enthusiastic developer, who loves to \"make things work\", and isn't scared to take things apart to figure out how, he has most recently been focused on Cloud Native architectures centered around Kubernetes, and what the arrival of Istio means for the accepted definition of Cloud Native applications.",
+  "Thumb" : "https://i.ytimg.com/vi/bUi_8v99jrc/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=bUi_8v99jrc&t=481s",
+  "PublishedAt" : "2018-04-27T15:53:15.000Z",
+  "Type" : "Video",
+  "ID" : 1,
+  "$$hashKey" : "object:56",
+  "Comments" : "",
+  "Tags" : "Istio Spring",
+  "Tree" : "Onboarding/EC/Cloud/Istio:A",
+  "Recommender" : ""
+}, {
+  "Title" : "Spring Initializr",
+  "Thumb" : "https://yt3.ggpht.com/-zF4TRgEyKkg/AAAAAAAAAAI/AAAAAAAAAAA/IBt_QgQUASE/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://start.spring.io/",
+  "Type" : "Link",
+  "ID" : 2,
+  "$$hashKey" : "object:85",
+  "Comments" : "Ken: the place to start a spring project",
+  "Description" : "",
+  "Tags" : "Spring",
+  "Tree" : "",
+  "PublishedAt" : ""
+}, {
+  "Title" : "Lynda: Online Courses, Classes, Training, Tutorials",
+  "Thumb" : "https://cdn.lynda.com/static/favicon.ico",
+  "Url" : "https://www.lynda.com/",
+  "Type" : "",
+  "ID" : 3,
+  "$$hashKey" : "object:38",
+  "Description" : "Free for SAP employees. Log in with your SAP credentials",
+  "Tags" : "Lynda"
+}, {
+  "Title" : "Microservices in the Cloud with Kubernetes and Istio (Google I/O '18)",
+  "Description" : "Are you building or interested in building microservices? They are a powerful method to build a scalable and agile backend, but managing these services can feel daunting: building, deploying, service discovery, load balancing, routing, tracing, auth, graceful failures, rate limits, and more. This session will show you how the Kubernetes container management system and Istio service mesh can simplify many of the operational challenges of microservices, including an in-depth live demo.\n\nRate this session by signing-in on the I/O website here → https://goo.gl/Ba7duU\n\nWatch more GCP sessions from I/O '18 here → https://goo.gl/qw2mR1\nSee all the sessions from Google I/O '18 here → https://goo.gl/q1Tr8x\n\nSubscribe to the Google Cloud Platform channel → https://goo.gl/S0AS51\n\n#io18",
+  "Thumb" : "https://i.ytimg.com/vi/gauOI0O9fRM/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=gauOI0O9fRM",
+  "PublishedAt" : "2018-05-09T21:13:30.000Z",
+  "Type" : "Video",
+  "ID" : 4,
+  "$$hashKey" : "object:43",
+  "Tags" : "Kubernetes Istio",
+  "Recommender" : "",
+  "Tree" : "Onboarding/EC/Cloud/Kubernetes:C"
+}, {
+  "Title" : "SAP Commerce Cloud Videos",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/display/education/Cloud+Portal",
+  "Type" : "Wiki",
+  "ID" : 5,
+  "$$hashKey" : "object:46",
+  "Description" : "",
+  "Tags" : "Hybris CommerceCloud",
+  "Tree" : ""
+}, {
+  "Title" : "Enable hybris",
+  "Thumb" : "https://cdnsecakmi.kaltura.com/p/1921661/sp/192166100/raw/entry_id/1_hvy1f62k/version/100001",
+  "Url" : "https://enable.hybris.com/",
+  "Type" : "Link",
+  "ID" : 6,
+  "$$hashKey" : "object:162",
+  "Tags" : "Hybris EnableHybris",
+  "Comments" : "",
+  "Tree" : "Onboarding/EC/SAPCX:enabling"
+}, {
+  "Title" : "SAP Hybris Cloud for Customer",
+  "Description" : "Quick videos on key tasks in SAP Hybris Cloud for Customer for end-users and administrators.\n\nSAP privacy statement for followers: www.sap.com/sps",
+  "Thumb" : "https://yt3.ggpht.com/-SrmLlFmNJXc/AAAAAAAAAAI/AAAAAAAAAAA/CIp2tuX8hDM/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/user/SAPCustomerOD/featured",
+  "PublishedAt" : "2013-01-31T03:38:08.000Z",
+  "Type" : "YouTubeChannel",
+  "ID" : 7,
+  "$$hashKey" : "object:42",
+  "Tags" : "Hybris HybrisCloud",
+  "Comments" : ""
+}, {
+  "Title" : "help.hybris.com",
+  "Url" : "https://help.hybris.com/",
+  "Type" : "Link",
+  "ID" : 8,
+  "$$hashKey" : "object:151",
+  "Thumb" : "https://yt3.ggpht.com/-SrmLlFmNJXc/AAAAAAAAAAI/AAAAAAAAAAA/CIp2tuX8hDM/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Tags" : "123 HybrisHelp"
+}, {
+  "Title" : "Guides",
+  "Thumb" : "https://yt3.ggpht.com/-zF4TRgEyKkg/AAAAAAAAAAI/AAAAAAAAAAA/IBt_QgQUASE/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://spring.io/guides",
+  "Type" : "Link",
+  "ID" : 9,
+  "$$hashKey" : "object:211",
+  "PublishedAt" : "",
+  "Tags" : "Spring",
+  "Tree" : "Onboarding/EC/Spring:SpringGuides"
+}, {
+  "Title" : "SF Scala: Jonas Bonér, Building Reactive Applications with Akka",
+  "Description" : "Jonas does a masterful overview of Akka, emphasizing the key features of distributed systems required in production and showing how Akka does it. ----------------------------------------------------------------------------------------------------------------------------------------\n\nScalæ By the Bay 2016 conference\n\nhttp://scala.bythebay.io \n\n-- is held on November 11-13, 2016 at Twitter, San Francisco, to share the best practices in building data pipelines with three tracks:\n\n* Functional and Type-safe Programming\n* Reactive Microservices and Streaming Architectures\n* Data Pipelines for Machine Learning and AI",
+  "Thumb" : "https://i.ytimg.com/vi/6Cb1wSVRI-Q/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=6Cb1wSVRI-Q&t=1504s",
+  "PublishedAt" : "2014-04-25T17:07:37.000Z",
+  "Type" : "Video",
+  "ID" : 10,
+  "$$hashKey" : "object:233",
+  "Tags" : "Scala Akka Reactive",
+  "Tree" : "",
+  "Recommender" : "",
+  "OnboardingECEngineers" : "2.GetAnOverviewOfAkka"
+}, {
+  "Title" : "Devoxx",
+  "Description" : "The official Devoxx YouTube channel (see also https://devoxx.com)",
+  "Thumb" : "https://yt3.ggpht.com/-elak0_mzDtI/AAAAAAAAAAI/AAAAAAAAAAA/tQiBZ13VGds/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV_3vurg",
+  "PublishedAt" : "2015-11-10T09:03:56.000Z",
+  "Type" : "YouTubeChannel ConferenceYouTubeChannel",
+  "ID" : 11,
+  "$$hashKey" : "object:252",
+  "Tags" : "Conferences Devoxx",
+  "Comments" : ""
+}, {
+  "Title" : "QCon",
+  "Description" : "QCon empowers software development by facilitating the spread of knowledge and innovation in the developer community. A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams. Since the launch of QCon in 2007, our events have been attended by over 12,000 innovators like you. As of 2013, there are eight QCon conferences held in the following cities: London, New York, San Francisco, Tokyo, Beijing,Shanghai, Rio de Janeiro and Sao Paulo",
+  "Thumb" : "https://yt3.ggpht.com/-3hlLEzsL6H8/AAAAAAAAAAI/AAAAAAAAAAA/X0EsZ2BU0Mk/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/channel/UCLI_iq5wEySHTOb7xk2F7Ww",
+  "PublishedAt" : "2014-02-20T21:10:45.000Z",
+  "Type" : "YouTubeChannel",
+  "ID" : 12,
+  "$$hashKey" : "object:272",
+  "Tags" : "QCon",
+  "Comments" : ""
+}, {
+  "Title" : "SpringDeveloper",
+  "Description" : "What is Spring?\n\nSpring is the most popular application development framework for enterprise Java™. \nMillions of developers use Spring to build simple, truly portable, fast and flexible JVM-based systems and applications.\n\nSubmit your video or screencast for consideration! Send an email to ask at spring dot io with the title:\n\"Community Submission - Spring Developer Channel\"\n- MP4 preferred\n- HD quality\n\nLearn more about Spring at http://www.spring.io",
+  "Thumb" : "https://yt3.ggpht.com/-zF4TRgEyKkg/AAAAAAAAAAI/AAAAAAAAAAA/IBt_QgQUASE/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/channel/UC7yfnfvEUlXUIfm8rGLwZdA",
+  "PublishedAt" : "2011-01-20T21:18:05.000Z",
+  "Type" : "YouTubeChannel",
+  "ID" : 13,
+  "$$hashKey" : "object:287",
+  "Tags" : "Spring"
+}, {
+  "Title" : "Cloud Foundry",
+  "Description" : "Cloud Foundry is the industry standard platform for cloud applications. Built for fast-cycle innovation. Designed for the enterprise.",
+  "Thumb" : "https://yt3.ggpht.com/-hVNLfg-3M3g/AAAAAAAAAAI/AAAAAAAAAAA/qI6mDpuw430/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/channel/UC0ZYS0Y7b5oiVLvxGf4magw",
+  "PublishedAt" : "2011-03-28T12:52:44.000Z",
+  "Type" : "YouTubeChannel ConferenceYouTubeChannel",
+  "ID" : 14,
+  "$$hashKey" : "object:300",
+  "Comments" : "",
+  "Tags" : "CloudFoundry"
+}, {
+  "Title" : "Model T CCV2 Overview by Simon Curd",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/pages/viewpage.action?pageId=378984718",
+  "Type" : "",
+  "ID" : 15,
+  "$$hashKey" : "object:66",
+  "Tags" : "CCV2 Hybris"
+}, {
+  "Title" : "Building a container from scratch in Go - Liz Rice (Microscaling Systems)",
+  "Description" : "Everyone has heard of Docker, but what is a container? Is it really \"a lightweight VM\"? In this talk we'll dispel the magic by writing a container in about 100 lines of Go.\n\nLiz Rice has a wealth of software development, team, and product management experience from her years working on network protocols and distributed systems as well as in digital technology sectors including VOD, music, and VoIP. When not building startups and writing code, Liz loves riding bikes in places with better weather than her native London.",
+  "Thumb" : "https://i.ytimg.com/vi/Utf-A4rODH8/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=Utf-A4rODH8",
+  "PublishedAt" : "2016-10-13T12:28:24.000Z",
+  "Type" : "Video",
+  "ID" : 16,
+  "$$hashKey" : "object:350",
+  "Tags" : "Docker",
+  "Comments" : ""
+}, {
+  "Title" : "Tutorials - Kubernetes",
+  "Thumb" : "https://kubernetes.io/images/favicon.png",
+  "Url" : "https://kubernetes.io/docs/tutorials/",
+  "Type" : "",
+  "ID" : 17,
+  "$$hashKey" : "object:384",
+  "PublishedAt" : "",
+  "Tree" : "Onboarding/EC/Cloud/Kubernetes:B",
+  "Recommender" : "",
+  "Comments" : "",
+  "Tags" : "Kubernetes"
+}, {
+  "Title" : "Michal Kordas — Groovier BDD with Spock",
+  "Description" : "Michal Kordas, Luxoft Poland — Groovier BDD with Spock  \nКонференция JBreak 2016\nНовосибирск, 19.03.2016\n\nDo you create your automated tests in JBehave or Cucumber, but hate it? Have you ever scared a business person by showing them a piece of JUnit test? There is no better, more meaningful and accurate way to communicate about the software we’re developing than tests, so we shouldn’t resign from telling the story about our product just because of crappy BDD tools.\n\nGroovy and Spock are nice alternative to bake BDD specifications directly into the code. By creating domain-specific language it’s possible to create specification understandable both for both business and developers, with IDE support, refactoring and static analysis.\n\n- Tests are finally not divided into two separate files\n- It is real pleasure to create readable specification: developers can use all the goodness and syntactic sugar that comes with Groovy\n- No need to parse any values from strings into numbers/enums/custom formats — they already are Groovy objects with powerful syntax\n- Fancy automatic formatting with colours is done by IDE itself for free — tests are normal Groovy code\n- IDE navigation to underlying layers of test by CTRL+click\n- No need to do any regexp matching, use clumsy annotations and aliases",
+  "Thumb" : "https://i.ytimg.com/vi/HSkU7oI9MGY/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=HSkU7oI9MGY",
+  "PublishedAt" : "2016-07-15T09:48:12.000Z",
+  "Type" : "Video",
+  "ID" : 18,
+  "$$hashKey" : "object:426",
+  "Tags" : "Spock"
+}, {
+  "Title" : "dotGo 2015 - Rob Pike - Simplicity is Complicated",
+  "Description" : "Go is often described as a simple language. It is not, it just seems that way. Rob explains how Go's simplicity hides a great deal of complexity, and that both the simplicity and complexity are part of the design.\n\nHelp us caption & translate this video!\n\nhttp://amara.org/v/H3o5/",
+  "Thumb" : "https://i.ytimg.com/vi/rFejpH_tAHM/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=rFejpH_tAHM",
+  "PublishedAt" : "2015-12-02T12:08:55.000Z",
+  "Type" : "Video",
+  "ID" : 19,
+  "$$hashKey" : "object:446",
+  "Tags" : "Go"
+}, {
+  "Title" : "Go Programming in 50 minutes - great overview by Derek Banas",
+  "Description" : "Get the Cheat Sheet Here : http://goo.gl/bxT1V7\nBest Book on Go : http://goo.gl/YU2aRn\n\nSupport me on Patreon : https://www.patreon.com/derekbanas?ty=h\n\nIntro : 00:56\nVariables : 2:30\nData Types : 2:43\nArithmetic : 5:20\nConstants : 5:45\nStrings : 6:15 & 38:32\nBooleans : 7:25\nPrintf : 7:36\nLogical Operators : 9:23\nFor Loops : 10:14\nRelational Operators : 11:08\nIf : 12:08\nSwitch : 13:10\nArrays : 13:45\nSlice : 15:22\nMaps : 18:29\nFunctions : 20:08\nClosures : 24:37\nRecursion : 25:25\nDefer : 27:39\nRecover : 28:55\nPointers : 31:00\nStructs : 33:43\nInterfaces : 35:47\nFile I/O : 41:29\nCasting : 43:10\nCreate Web Server : 44:22\nGo Routines : 46:17\nChannels : 48:10",
+  "Thumb" : "https://i.ytimg.com/vi/CF9S4QZuV30/hqdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=CF9S4QZuV30&t=5s",
+  "PublishedAt" : "2015-02-16T02:30:25.000Z",
+  "Type" : "Video",
+  "ID" : 20,
+  "$$hashKey" : "object:491",
+  "Tags" : "Go"
+}, {
+  "Title" : "InfoQ: Software Development News, Videos &amp; Books",
+  "Thumb" : "https://cdn.infoq.com/statics_s2_20180704-0355-1/favicon.ico",
+  "Url" : "https://www.infoq.com/",
+  "Type" : "Link",
+  "ID" : 21,
+  "$$hashKey" : "object:76",
+  "Tags" : "InfoQ"
+}, {
+  "Title" : "InfoQ",
+  "Description" : "InfoQ - Accelerating the software side of human technological progress \n\nSoftware is changing the world, and our mission is to help progressive software development teams adopt new technologies and practices. InfoQ provides software engineers with the opportunity to share experiences gained using innovator and early adopter stage techniques and technologies with the wider industry. We carefully curate and peer review everything we publish. We strongly believe that the high quality insights, offered by both our editors and other contributors, have the power to uplift entire communities, no matter what their native language. InfoQ currently offers content in English, Japanese, Chinese, Portuguese and French.",
+  "Thumb" : "https://yt3.ggpht.com/-TaLfXMfsZvU/AAAAAAAAAAI/AAAAAAAAAAA/j9gV5S-evyI/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/user/MarakanaTechTV",
+  "PublishedAt" : "2011-01-07T22:21:32.000Z",
+  "Type" : "ConferenceYouTubeChannel",
+  "ID" : 22,
+  "$$hashKey" : "object:301",
+  "Tags" : "InfoQ"
+}, {
+  "Title" : "Redis Tutorial - A Brief Introduction to Redis",
+  "Description" : "Learn more advanced front-end and full-stack development at: https://www.fullstackacademy.com\n\nRedis is an open source NoSQL database that can support different kinds of abstract data structures. It implements an in-memory key-value data store with optional durability. In this Redis tutorial, we give an overview of this database tool and describe the fundamental differences between SQL and Redis.\n\nWatch this video to learn:\n\n- What is Redis\n- Why you should use Redis\n- How to set up Redis in Node.js",
+  "Thumb" : "https://i.ytimg.com/vi/qr4FVhBTq0I/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=qr4FVhBTq0I",
+  "PublishedAt" : "2017-03-06T16:45:49.000Z",
+  "Type" : "Video",
+  "ID" : 23,
+  "$$hashKey" : "object:353",
+  "Recommender" : "",
+  "Tags" : "Redis",
+  "Tree" : ""
+}, {
+  "Title" : "Scala Tutorial  from Derek Banas",
+  "Description" : "Get the Cheat Sheet Here : http://goo.gl/O1CuGM\n\nBest Scala Book : http://amzn.to/1JfA1bV\n\nSupport me on Patreon : https://www.patreon.com/derekbanas\n00:55 Installation\n03:03 REPL\n04:36 Data Types\n07:00 Math\n09:57 If \n12:38 Compiled Scala / Main\n13:11 While\n13:57 Do While\n14:25 For Loops\n19:46 User Input / Output\n25:17 Strings\n27:40 Functions\n31:08 Recursion\n33:22 Arrays\n34:32 ArrayBuffer\n37:04 Yield\n37:40 ForEach\n41:52 Maps\n44:59 Tuples\n46:39 Classes\n54:26 Companion Objects / Static\n57:42 Inheritance\n1:01:22 Abstract Classes\n1:03:11 Traits\n1:06:04 Higher Order Functions\n1:06:46 Map\n1:07:53 Filter\n1:10:07 Closures\n1:11:05 File I/O\n1:12:57 Exception Handling",
+  "Thumb" : "https://i.ytimg.com/vi/DzFt0YkZo8M/hqdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=DzFt0YkZo8M",
+  "PublishedAt" : "2015-08-24T23:46:07.000Z",
+  "Type" : "Video",
+  "ID" : 24,
+  "$$hashKey" : "object:83",
+  "Tags" : "Scala"
+}, {
+  "Title" : "Hybris 123",
+  "Thumb" : "/images/hybris.png",
+  "Url" : "https://help.hybris.com/6.7.0/hcd/a1ef894ac89545e79c470c726b487d13.html",
+  "Type" : "Link",
+  "ID" : 25,
+  "$$hashKey" : "object:85",
+  "Description" : "Interactive self-study guide thru the Hybris Platform",
+  "Tags" : "123",
+  "Tree" : "Onboarding/EC/Hybris:Hybris123",
+  "Comments" : ""
+}, {
+  "Title" : "Why Kubernetes? - Kubernetes in 5 minutes",
+  "Description" : "Red Hatter Jamie Duncan gives a technical overview of Kubernetes, an open source container orchestration system, in just five minutes.\n\nIn this video, Duncan says container technologies like Docker are \"making us rethink how we deliver software.\" But they have their limits. Scaling them requires an important tool for extending their purchase: Kubernetes. To some, it’s the future of IT—one in which containers play an increasingly important role.",
+  "Thumb" : "https://i.ytimg.com/vi/N6r-9ZzFgzw/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=N6r-9ZzFgzw",
+  "PublishedAt" : "2016-01-29T20:12:58.000Z",
+  "Type" : "Video",
+  "ID" : 26,
+  "Tree" : "Onboarding/EC/Cloud/Kubernetes:A",
+  "Comments" : "",
+  "Tags" : "Kubernetes"
+}, {
+  "Title" : "Kyma Home",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/display/ysf/Kyma",
+  "Type" : "",
+  "ID" : 27,
+  "PublishedAt" : "",
+  "Tags" : "Kyma",
+  "Comments" : "",
+  "Tree" : "Onboarding/Kyma:A"
+}, {
+  "Title" : "How to create Docker Image and run Java App (Spring Boot Jar) in a Docker Engine | Tech Primers",
+  "Description" : "This video cover, how we can create a Docker image with a Java Application (Spring Boot Application) and run that in a Docker container.\n\nTwitter: https://twitter.com/TechPrimers\n\nFacebook: http://fb.me/TechPrimers\n\nGitHub: https://github.com/TechPrimers\n\nVideo Editing: iMovie",
+  "Thumb" : "https://i.ytimg.com/vi/FlSup_eelYE/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=FlSup_eelYE&t=1155s",
+  "PublishedAt" : "2017-06-07T18:34:47.000Z",
+  "Type" : "Video",
+  "ID" : 28,
+  "Tags" : "Docker SpringBoot"
+}, {
+  "Title" : "GOTO 2017 • Kubernetes in Real Life • Ian Crosby",
+  "Description" : "This presentation was recorded at GOTO Copenhagen 2017\nhttp://gotocph.com\n\nIan Crosby - Senior Engineer at Container Solutions\n\nABSTRACT\nWhen developing Cloud Native applications, a robust orchestration layer is crucial. Deployment and management of your containerised applications is not something which can be performed manually. Of the many tools which aim to solve this problem Kubernetes has emerged as a leader in the [...]\n\nDownload slides and read the full abstract here:\nhttps://gotocph.com/2017/sessions/240\n\nhttps://twitter.com/gotocph\nhttps://www.facebook.com/GOTOConference\nhttp://gotocon.com",
+  "Thumb" : "https://i.ytimg.com/vi/UUt7SuG3nW4/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=UUt7SuG3nW4",
+  "PublishedAt" : "2017-11-30T12:20:22.000Z",
+  "Type" : "Video",
+  "ID" : 29,
+  "Tags" : "Kubernetes Goto",
+  "Comments" : ""
+}, {
+  "Title" : "Stefan Tilkov -  Microservices Patterns and Anti-patterns",
+  "Description" : "Stefan Tilkov's talk \"Microservices Patterns and Anti-patterns\" from the 2018 MicroCPH Conference.\n\nAbstract:\nA look at some of the good and bad things about Microservices and their application.",
+  "Thumb" : "https://i.ytimg.com/vi/VaYmRe104HU/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=VaYmRe104HU",
+  "PublishedAt" : "2018-05-22T14:03:35.000Z",
+  "Type" : "Video",
+  "ID" : 30,
+  "Tags" : "Microservices Patterns"
+}, {
+  "Title" : "CaaS Upswing",
+  "Thumb" : "/images/sap.jpg",
+  "Url" : "https://help.sap.com/viewer/DRAFT/175bd65ec40b459d84c7d55d5d6d0f64/DEV/en-US",
+  "Type" : "",
+  "ID" : 31,
+  "PublishedAt" : "",
+  "Description" : "",
+  "Tags" : "CaaS Upswing"
+}, {
+  "Title" : "GOTO Conferences",
+  "Description" : "Created for developers, by developers, GOTO Conferences are focused on bringing the best minds in the software community and the most interesting topics to light. This channel features video interviews and presentations from GOTO Conferences and GOTO Nights.\n\nGOTO Conferences are produced by Trifork, a leading full service supplier of high-quality custom-built applications and end-to-end solutions.",
+  "Thumb" : "https://yt3.ggpht.com/-XQ8wVwqnakE/AAAAAAAAAAI/AAAAAAAAAAA/pqO6SOJJs6c/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Url" : "https://www.youtube.com/user/GotoConferences",
+  "PublishedAt" : "2011-10-03T12:34:19.000Z",
+  "Type" : "YouTubeChannel ConferenceYouTubeChannel",
+  "ID" : 32,
+  "Tags" : "Goto"
+}, {
+  "Title" : "Rob Pike - 'Concurrency Is Not Parallelism'",
+  "Description" : "Rob (@rob_pike) is a software pioneer. His influence is everywhere: Unix, Plan 9 OS, The Unix Programming Environment book, UTF-8, and most recently the Go programming language.\n\nRead more at: http://blog.golang.org/concurrency-is-not-parallelism\nSlides: http://talks.golang.org/2012/waza.slide\nOriginal Video by Heroku: https://vimeo.com/49718712\n\nThe only reason I re-uploaded this is to be able to add it to my YouTube playlist: http://www.youtube.com/playlist?list=PLgLELVGYxII4-HbYPk3xKk2vQz4uqrdie",
+  "Thumb" : "https://i.ytimg.com/vi/cN_DpYBzKso/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=cN_DpYBzKso",
+  "PublishedAt" : "2013-10-20T09:17:07.000Z",
+  "Type" : "Video",
+  "ID" : 33,
+  "Tags" : "Concurrency Go",
+  "OnboardingECEngineers" : "1.GetAnOverviewOfParallelism",
+  "Recommender" : ""
+}, {
+  "Title" : "Reactive Spring by Josh Long",
+  "Description" : "Spring Framework 5 is here! One of the most exciting introductions in this release is support for reactive programming, building on the Pivotal Reactor project to support message-driven, elastic, resilient and responsive services. Spring 5 integrates an MVC-like component model adapted to support reactive processing and a new type of web endpoint, functional reactive endpoints. In this talk, we'll look at the net-new Netty-based web runtime, how existing Servlet code can run on the new world, and how to integrate it with existing Spring-stack technologies.\n\nJosh Long, Pivotal\nJosh (@starbuxman) is the Spring Developer Advocate at Pivotal. Josh is a Java Champion, author of 5 books (including O'Reilly's upcoming \"Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry\") and 3 best-selling video trainings (including \"Building Microservices with Spring Boot Livelessons\" w/ Phil Webb), and an open-source contributor (Spring Boot, Spring Integration, Spring Cloud, Activiti and Vaadin)\n\nRecorded at Jfokus 2018\nhttps://www.jfokus.se/jfokus18/schedule.jsp",
+  "Thumb" : "https://i.ytimg.com/vi/LFp9wqBone0/maxresdefault.jpg",
+  "Url" : "https://www.youtube.com/watch?v=LFp9wqBone0&t=915s",
+  "PublishedAt" : "2018-02-22T15:25:08.000Z",
+  "Type" : "Video",
+  "ID" : 34,
+  "Comments" : "",
+  "Tags" : "SpringBoot Spring",
+  "Tree" : ""
+}, {
+  "Title" : "SAP DevX",
+  "Url" : "https://jam4.sapjam.com/groups/pZilF0N3doSrJEChWIsrom/overview_page/weo8KCPbG6x4m2uMgjn0Y1",
+  "Type" : "",
+  "ID" : 35,
+  "Thumb" : "/images/sap.jpg",
+  "Description" : ""
+}, {
+  "ID" : 36,
+  "Title" : "Introduction to Microservices, Docker, and Kubernetes",
+  "Description" : "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\n\nDeployment YAML: https://pastebin.com/rZa9Dm1w\n\nDockerfile: https://pastebin.com/SZA26rbg\n\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\n\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8",
+  "Thumb" : "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg",
+  "Duration" : "55M8S",
+  "Url" : "https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1196s",
+  "PublishedAt" : "2017-11-08T04:50:19.000Z",
+  "Type" : "Video",
+  "Tree" : "Onboarding/EC/Cloud/Kubernetes:D"
+}, {
+  "ID" : 37,
+  "Title" : "Getting Started with Spring Boot",
+  "Description" : "Spring Boot is the convention-over-configuration framework from the Spring team at Pivotal. It marries Spring’s flexibility with conventional, common sense defaults to make application development pleasant, approachable, and ready for production immediately.\n\nIn this video, Josh Long demos what Spring Boot can do.\n\nMore resources for Java developers: http://bit.ly/1K7Utza\n\nhttp://www.meetup.com/sfjava/",
+  "Thumb" : "https://i.ytimg.com/vi/sbPSjI4tt10/sddefault.jpg",
+  "Duration" : "1H29M16S",
+  "Url" : "https://www.youtube.com/watch?v=sbPSjI4tt10&t=153s",
+  "PublishedAt" : "2015-06-02T20:41:09.000Z",
+  "Type" : "Video",
+  "Tags" : "",
+  "Tree" : "Onboarding/EC/Spring/SpringBoot:A"
+}, {
+  "ID" : 38,
+  "Title" : "What is Node.js Exactly? - a beginners introduction to Nodejs",
+  "Description" : "What exactly is node.js?  Is it a command-line tool, a language, the same thing as Ruby on Rails, a cure for cancer?\n\nIf you're new to web development, it can be a bit confusing as to what exactly node.js is and to what you should do with it, and there's a lot of information out there...most of which seems to be tailored towards genius-level developers.\n\nSo, here's a node.js introduction for those who have no idea what it is.\n\nWe're going to cover the difference between javascript in a browser vs javascript in node.js and the common uses for node.js.\n\nTo wrap it up, we're going to spin up a quick web server in node.js just to show you how easy it is.\n\nNow, learn how to build an Express.js App!\nhttps://www.youtube.com/watch?v=FqMIyTH9wSg",
+  "Thumb" : "https://i.ytimg.com/vi/pU9Q6oiQNd0/sddefault.jpg",
+  "Duration" : "13M5S",
+  "Url" : "https://www.youtube.com/watch?v=pU9Q6oiQNd0&t=106s",
+  "PublishedAt" : "2014-12-12T18:30:02.000Z",
+  "Type" : "Video",
+  "Tags" : "NodeJS"
+}, {
+  "ID" : 39,
+  "Title" : "SAP Single Sign-On login - SAP Hybris Wiki",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/display/prodandtech/Hybris+Online+Courses+Free+for+Hybrids",
+  "Type" : ""
+}, {
+  "ID" : 40,
+  "Title" : "SAP Single Sign-On login - SAP Hybris Wiki",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/display/prodandtech/Hybris+Online+Courses+Free+for+Hybrids",
+  "Type" : "",
+  "Tree" : "Onboarding/EC/Hybris:FreeOnlineCourses"
+}, {
+  "ID" : 41,
+  "Title" : "Beginner-Friendly Introduction to Containers, VMs and Docker",
+  "Thumb" : "/images/docker.png",
+  "Url" : "https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b",
+  "Type" : "",
+  "Tree" : "Onboarding/EC/Cloud/Docker:A"
+}, {
+  "ID" : 42,
+  "Title" : "Express Tutorial",
+  "Description" : "Get the Code Here : http://goo.gl/zmOf30\nBest NodeJS / Express Book : http://amzn.to/1I6vNZo\n\nSupport me on Patreon : https://www.patreon.com/derekbanas\n\nBootstrap Tutorial : https://www.youtube.com/watch?v=gqOEoUR5RHg\n\nHandlebars Tutorial : https://www.youtube.com/watch?v=4HuAnM6b2d8\n\nIn this tutorial we'll explore the Express NodeJS framework. It provides all of the capabilities of NodeJS, also makes it easy to build robust web applications quite easily using a MVC format. I'll cover how to install on Windows, Mac and Linux. We'll then explore building the server, routes, incorporating Handlebars, incorporating Bootstrap, ports, middleware, app.use, app.get, catching / throwing errors, handling forms, file uploads, cookies, sessions, reading / writing files and much more.",
+  "Thumb" : "https://i.ytimg.com/vi/xDCKcNBFsuI/hqdefault.jpg",
+  "Duration" : "52M1S",
+  "Url" : "https://www.youtube.com/watch?v=xDCKcNBFsuI&list=PLGLfVvz_LVvSpxyVx5XcprEgvhJ1BzruD",
+  "PublishedAt" : "2015-11-23T17:40:03.000Z",
+  "Type" : "Video",
+  "Tree" : ""
+}, {
+  "ID" : 43,
+  "Title" : "Smart Agents - SAGE",
+  "Thumb" : "/images/sage.png",
+  "Url" : "https://wiki.hybris.com/display/jointrd/Smart+Agents+-+SAGE",
+  "Type" : "",
+  "Description" : "Important testing framework for our hybris web pages",
+  "Tags" : "sage qa",
+  "Tree" : "Onboarding/EC/QA:Sage",
+  "Comments" : ""
+}, {
+  "ID" : 44,
+  "Title" : "ModelT Training Materials",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/display/cloudss/Model-T+training+materials",
+  "Type" : "",
+  "Tags" : "ModelT",
+  "Tree" : "Onboarding/EC/ModelT:TrainingMaterial",
+  "Comments" : ""
+}, {
+  "ID" : 45,
+  "Title" : "What is Docker?",
+  "Thumb" : "https://cdn.lynda.com/static/favicon.ico",
+  "Url" : "https://www.lynda.com/Docker-tutorials/What-Docker/485649/514164-4.html",
+  "Type" : "",
+  "Tags" : "Docker",
+  "OnboardingECEngineers" : "3.Docker",
+  "Duration" : ""
+}, {
+  "ID" : 46,
+  "Title" : "Kubernetes: Microservices",
+  "Thumb" : "https://cdn.lynda.com/static/favicon.ico",
+  "Url" : "https://www.lynda.com/Kubernetes-tutorials/Kubernetes-Microservices/691061-2.html",
+  "Type" : "",
+  "OnboardingECEngineers" : "4.Kubernetes",
+  "Recommender" : ""
+}, {
+  "ID" : 47,
+  "Title" : "The Twelve Factor app: Best Practices for Java Deployment by Joe Kutner",
+  "Description" : "Twelve Factor apps are built for agility and rapid deployment. They enable continuous delivery and reduce the time and cost for new developers to join a project. At the same time, they are architected to exploit the principles of modern cloud platforms while permitting maximum portability between them. Finally, they can scale up without significant changes to tooling, architecture or development practices.\n\nIn this talk, you’ll learn the principles and best practices espoused by the Twelve Factor app. We’ll discuss how to structure your code, manage dependencies, store configuration, run admin tasks, capture log files, and more. You’ll learn how modern Java deployments can benefit from adopting these principles, and why they fit nicely within the cloud.",
+  "Thumb" : "https://i.ytimg.com/vi/94PxlbuizCU/maxresdefault.jpg",
+  "Duration" : "32M1S",
+  "Url" : "https://www.youtube.com/watch?v=94PxlbuizCU&t=219s",
+  "PublishedAt" : "2015-11-13T09:08:52.000Z",
+  "Type" : "Video",
+  "Tags" : "TwelveFactors",
+  "Tree" : ""
+}, {
+  "ID" : 48,
+  "Title" : "The world's greatest Azure demo",
+  "Description" : "Thank you to everyone that left such positive feedback on this demo! It was so well-received that I went ahead and turned it into a full-blown Pluralsight course titled \"Modernizing Your Websites with Azure Platform as a Service\". This is five and a half hours of focussed training specifically on Azure Websites and the Azure SQL Database service. There's a huge amount of content in there not seen in the tutorial here as a bunch of new stuff has launched in the year since this video, there's an all new management portal and, well, it's four times as long! http://www.pluralsight.com/courses/modernizing-websites-microsoft-azure\n\n------------------------\n\nThis video is part of a blog post at: http://www.troyhunt.com/2014/03/the-worlds-greatest-azure-demo.html\n\nI do a lot of demos. I write a lot of blog posts. Thing is though, none of them really sell the whole Azure picture; the BIG picture.\n\nThe superdemo was designed to cover as much as possible in one hour. (Ok, it wouldn't all fit in an hour so you get an hour twenty something.) It's the demo for people who don't quite know what this Azure thing is and probably aren't quite up to speed on the whole cloud idea either.\n\nThis is an hour and a bit of barely-edited \"making real stuff happen\" back-to-back demos of the important things you need to understand about websites, VMs and SQL Azure.",
+  "Thumb" : "https://i.ytimg.com/vi/7V8HikBP1vQ/maxresdefault.jpg",
+  "Duration" : "1H22M30S",
+  "Url" : "https://www.youtube.com/watch?v=7V8HikBP1vQ&t=1392s",
+  "PublishedAt" : "2014-03-13T22:28:48.000Z",
+  "Type" : "Video",
+  "Tags" : "Azure",
+  "Comments" : ""
+}, {
+  "ID" : 49,
+  "Title" : "AWS Lambda Tutorial: Lambda + Serverless = HAPPY",
+  "Description" : "In under 10 minutes, we'll have a production and staging server running on AWS Lambda using Serverless.\n\nThis AWS Lambda tutorial shows how powerful functions as a service are and how easy it is to get up and running with them.\n\nThe Serverless framework helps you get up and running in production in 3 commands. (2 if you already have the AWS CLI installed!)",
+  "Thumb" : "https://i.ytimg.com/vi/71cd5XerKss/maxresdefault.jpg",
+  "Duration" : "10M4S",
+  "Url" : "https://www.youtube.com/watch?v=71cd5XerKss&t=174s",
+  "PublishedAt" : "2017-02-27T18:00:01.000Z",
+  "Type" : "Video",
+  "Tags" : "Lambda Serverless AWS"
+}, {
+  "ID" : 50,
+  "Title" : "TDD for those who don't need it - GopherCon SG 2017",
+  "Description" : "Speaker: Chew Choon Keat\n\nFor the longest time, I didn’t write tests. Writing tests is a chore, a waste of time, and doesn’t GTD. The snobbery of the test community only turned me off even more; discouraging good developers from trying TDD. Now, I write tests first. This talk explains what clicked for me (and maybe it will for you too)\n\nEvent Website: https://2017.gophercon.sg\n\nProduced by Engineers.SG",
+  "Thumb" : "https://i.ytimg.com/vi/a6oP24CSdUg/maxresdefault.jpg",
+  "Duration" : "13M43S",
+  "Url" : "https://www.youtube.com/watch?v=a6oP24CSdUg&feature=youtu.be",
+  "PublishedAt" : "2017-05-29T16:26:48.000Z",
+  "Type" : "Video",
+  "Tags" : "TDD"
+}, {
+  "ID" : 51,
+  "Title" : "Building Microservices with Spring Cloud",
+  "Description" : "Microservices. What does it mean in practice? The answer, like so many Facebook status updates, is complicated. In broad strokes, microservices offer a refreshed approach to application architecture. Microservices are a new way to describe many of the patterns that have fallen out of large-scale applications in practice over recent years. There is no doubt that the approach works. The question is: How does one build a microservices architecture? Join Spring Developer Advocate Josh Long for this event introducing the Spring Cloud project to support building cloud-scale and cloud-ready microservices. Spring Cloud builds on Spring Boot and makes developing complex distributed systems and microservices a snap.\n\nSF Java User Group: http://sfjava.org\n\nJava and Spring Training for Development Teams: \nhttps://newcircle.com",
+  "Thumb" : "https://i.ytimg.com/vi/ZyK5QrKCbwM/maxresdefault.jpg",
+  "Duration" : "1H23M10S",
+  "Url" : "https://www.youtube.com/watch?v=ZyK5QrKCbwM",
+  "PublishedAt" : "2016-02-04T21:57:03.000Z",
+  "Type" : "Video",
+  "Tags" : "Spring Cloud SpringBoot",
+  "Comments" : ""
+}, {
+  "ID" : "52",
+  "Title" : "Deploying Spring Boot Apps on Kubernetes - Thomas Risberg",
+  "Description" : "In this talk we will give an overview of the challenges involved in deploying a Spring Boot app on Kubernetes. How do you deploy the web app and a database together? How do you configure your app with the database password? We will take a look at what's needed to deploy Spring Cloud Data Flow server on Kubernetes, both for testing and for a real production deployment. We'll also discuss using Helm for app deployments.\n\nThomas Risberg, Staff Engineer, Pivotal\nFilmed at SpringOne Platform 2017",
+  "Thumb" : "https://i.ytimg.com/vi/RelPurLZnII/maxresdefault.jpg",
+  "Duration" : "26M30S",
+  "Url" : "https://www.youtube.com/watch?v=RelPurLZnII",
+  "PublishedAt" : "2017-12-14T16:31:40.000Z",
+  "Type" : "Video",
+  "Tags" : "SpringBoot Kubernetes"
+}, {
+  "ID" : 53,
+  "Title" : "ECP System Demos",
+  "Thumb" : "https://wiki.hybris.com/s/en_GB/7401/e170a3915839da2821803843481d4419ff03b453/71/_/favicon.ico",
+  "Url" : "https://wiki.hybris.com/display/prodandtech/ECP+System+Demos",
+  "Type" : "",
+  "Tags" : "SystemDemos"
+}, {
+  "ID" : 54,
+  "Title" : "Context Driven Services",
+  "Url" : "https://help.hybris.com/cds/latest/99b23f424fac4185a48e81418edaeab1.html",
+  "Type" : "",
+  "Description" : "",
+  "Thumb" : "/images/cds.png",
+  "Tags" : "ContextDrivenServices",
+  "Comments" : "",
+  "OnboardingECEngineers" : ""
+} ]

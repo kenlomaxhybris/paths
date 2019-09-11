@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="pathstyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+<div ng-app="pathsApp" ng-controller="pathsCtrl" class="container-fluid">
+ 	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <h3>SAP CX Essentials </h3> &nbsp;&nbsp;&nbsp;Get, and stay, up to speed, with material recommended by our in-house experts.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Search:</b> <input name=search  ng-model="textSearch" ng-change="updated_textSearch()" >
+			&nbsp;<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      Contribute &nbsp; <input ng-model=boolContributing type=checkbox ng-change="updated_contributing()">
+		  </div>
+		</nav>
+	</div>		
+
+
+	<div class="container-fluid">
+		<div  >
+			<b>Filters:</b><br>
+			<cite ng-repeat="(k,v) in arrayArrayChoices track by $index " >
+				{{k}}
+				<cite ng-repeat="choice in v | orderBy:choice track by $index " >
+					<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" ng-click="selected_tag( k, choice, $event);" alt="{{k}}_{{choice}}">{{choice}}</button>
+				</cite><br>
+			</cite>
+		</div>
+<br>
+		<div class="row" >
+			<div class="col-lg-6">
+				<code ng-repeat="v in arrayAllMaterial  | orderBy:ID track by $index  " >	
+						<a class="align-top"  target="_blank" href="{{ arrayAllMaterial[v.ID].Url }}"><img  id="{{v.ID}}" alt="thumbs" name="{{ arrayAllMaterial[v.ID].Title }}"  ng-mouseover="select_Material(v.ID)" ng-src="{{v.Thumb}}" width=30 height=30/></a>
+				</code>
+			</div>
+			<div class="col-lg-6" >
+				<h5>{{arrayAllMaterial[idSelectedMaterial].Title}}</h5>
+		       	<a class="align-top" alt="materiallink" target="_blank" href="{{ arrayAllMaterial[idSelectedMaterial].Url }}">
+				 	<img name="Large{{idSelectedMaterial}}" alt=largeThumb id="{{idSelectedMaterial}}" class="" ng-src="{{ arrayAllMaterial[idSelectedMaterial].Thumb }}" width=200 />
+				</a><br>
+				<div ng-if="arrayAllMaterial[idSelectedMaterial].Comments"><h5>Comments</h5>
+				{{arrayAllMaterial[idSelectedMaterial].Comments}}</div>
+				<div ng-if="arrayAllMaterial[idSelectedMaterial].Description"><h5>Description</h5>
+				{{arrayAllMaterial[idSelectedMaterial].Description}}</div>
+			</div>		
+		</div>
+	</div>
+	<div alt="contributing"><form>New Material:
+		<input name=urlNew ng-model="urlNew" />
+		<button name=button ng-click="add_material()" >Add</button><br>
+		<button name=button ng-click="save_Json()" >Save</button>
+		<button name=button ng-click="delete_selectedMaterial()" >Delete</button></form>
+	</div>
+	<div alt="contributing">
+		<div class="col-lg-9">
+			<table class="table">		
+				<tr ng-repeat="field in arrayFields"  >
+			   		<td width="10%">
+				   		{{field}}<b ng-if="!arrayAllMaterial[idSelectedMaterial].hasOwnProperty( field )" >*</b>
+			   		</td>	
+			   		<td >	
+				   		<textarea rows="{{key==='Description' && '4' || '1' }}" class="form-control" ng-value="arrayAllMaterial[idSelectedMaterial][field]" ng-blur="updated_Material( field, $event)" ></textarea>
+				   	</td>
+		   		</tr>	
+			</table>
+		</div>
+
+		<div  alt="contributing" >
+		 	<form>		 		
+		 		Selectable Tags: <input name="selectablTags" ng-model="textSelectableTags" ng-change="updated_textSelectedableTags()" />
+		 		<div ><br>Important Tags: <input name="importantTags" ng-model="textImportantTags" /></div>
+				<div  ><br>Selected Tags: <input name=criteria ng-model="textSelectedTags" ng-change="updated_textSelectedTags()" />  </div> 
+				<br>Delta Tags: <input name=deltaTags ng-model="textDeltaTags" />    
+				<button name=button ng-click="edit_textDeltaTags()" >Edit</button>
+				<div ><br >Delta Keys: <input name=deltaKeys ng-model="textDeltaKeys" /><button name=button ng-click="edit_textDeltaKeys()" >Edit</button> </div>
+				<br>
+			</form>
+		</div>
+	</div>
+
+	<div  alt="contributing"  >
+		<h4>Details of all materials</h4>
+		<div ng-repeat="(key, v) in arrayAllMaterial track by $index">
+	    	{{key}} 
+	    	<div ng-repeat="(key, val) in v">
+	   	       {{ key }} -> {{ val }}<br>
+	    	</div> 
+		</div>
+	</div>	
+</div>
+	
+	<script th:inline="javascript">
+	    var json = /*[[${json}]]*/ 'jsonNotFound';
+	</script>
+	
+	<script>
+		var app = angular.module("pathsApp", [])
+		.controller("pathsCtrl", function($scope, $http) {
+			$scope.arrayAllMaterial = JSON.parse(json) 	
+			$scope.textSelectableTags = "OnboardingECEngineers Topics Type Recommenders Tags UserStory";
+			$scope.arrayChoices = [];
+			$scope.arrayArrayChoices=new Object()
+			$scope.tree=new Object()
+			$scope.treekeys=[]
+			$scope.idSelectedMaterial=""
+		    $scope.urlNew=""
+			$scope.arrayFields=[]
+			$scope.boolContributing=false
+			$scope.textSelectedTags = "";
+			$scope.textImportantTags ="Title Description";
+			$scope.textDeltaTags=""
+			$scope.textDeltaKeys=""
+			$scope.booleanShiftPressed=false;
+
+			$scope.delete_selectedMaterial = function(){
+				$scope.arrayAllMaterial.splice( $scope.idSelectedMaterial, 1 )
+				for (var i=0; i<$scope.arrayAllMaterial.length; i++) {
+			      $scope.arrayAllMaterial[i].ID=i
+			    }
+				$scope.compute_choicesAndFields();
+				$scope.select_Material( 0 )			
+			}
+					
+			$(document).keyup(function (e) {
+			    if (e.keyCode == 16) {
+				    $scope.booleanShiftPressed=false;
+				}
+			});
+			$(document).keydown(function (e) {
+			    if (e.keyCode == 16) {
+				    $scope.booleanShiftPressed=true;
+				}
+			});
+
+			$scope.updated_contributing = function(){
+                $("div[alt='contributing']").removeClass("notcontributing")
+			    if (!$scope.boolContributing)
+                    $("div[alt='contributing']").addClass("notcontributing")
+            }
+	    
+			$scope.check_isTagSelectable = function(key){
+				if ($scope.textSelectableTags===null || $scope.textSelectableTags==="")
+					return false;
+				return (" "+$scope.textSelectableTags+" ").includes( " "+key+" " );
+			}
+			   	   
+			$scope.updated_Material = function(key, $event ) {
+			  	$scope.arrayAllMaterial[$scope.idSelectedMaterial][key]=$event.target.value
+			  	$scope.compute_choicesAndFields();
+			 }
+		   
+	    	$scope.updated_textSearch = function() {    		 
+	    		$("img").removeClass("img-opaque")	   
+	    		if ($scope.textSearch==="")
+	    			return;	    		
+	    		$( "img" ).each(function( index ) {	
+					if (!  $( this).attr("name").toLowerCase().includes( $scope.textSearch.toLowerCase() ) &&
+                        !  $( this).attr("alt").includes("largeThumb"))
+						this.classList.add("img-opaque")
+				});	
+			}		 
+
+			$scope.updated_textSelectedableTags = function() {
+	    		$scope.compute_choicesAndFields()
+			}   
+		
+	    	$scope.updated_textSelectedTags = function() {
+	    		$("img").removeClass("img-opaque")	    	
+	    			
+	    		if ($scope.textSelectedTags==="")
+	    			return;	    
+	    		$("img[alt='thumbs']").addClass("img-opaque")
+	    					
+	    		angular.forEach( $scope.textSelectedTags.split(" "), function(value, key){		     
+	    			if (value==="" )
+	    				return;
+    				var k = value.split("_")[0];
+    				var v = value.split("_")[1];
+    				
+					$( "img" ).each(function( index ) {	
+						var imgID = $( this).attr("id")
+						if ( imgID!==undefined && $scope.arrayAllMaterial.hasOwnProperty( imgID ) && $scope.arrayAllMaterial[ imgID ].hasOwnProperty(k) && $scope.arrayAllMaterial[ imgID ][k].includes(v)  )
+						    this.classList.remove("img-opaque")	
+					});				
+				});
+			}
+
+			$scope.compute_choicesAndFields = function() {	
+				var setChoices = new Set()
+				var setFields= new Set()
+				var p="Path_"
+				
+				$.each($scope.arrayAllMaterial, function(k1, v1) {
+					$.each(v1, function(k2, v2) {
+						if( k2!=="$$hashKey"){
+							setFields.add( k2 )
+							if($scope.check_isTagSelectable(k2) ){						
+								$.each(v2.split(" "), function (k3, v3){	
+									 if(v3!=="")
+										setChoices.add( k2+"_"+v3 )							 
+								})				
+							}
+						}
+					})
+				})			
+				$scope.arrayChoices = Array.from(setChoices)
+				$scope.arrayFields = Array.from(setFields)
+				$scope.compute_arrayArrays()
+				$scope.compute_tree()
+			}
+
+		    $scope.edit_textDeltaTags = function() {	 
+		    	var c = $scope.textDeltaTags ;
+		   	 	c = c.trim();  
+				var tags = c.split(" "),  i;
+
+				for (i = 0; i < tags.length; i++) {
+					if (tags[i]===" " || tags[i]==="")
+						continue;
+					var tag = tags[i];
+					var left  = tag.split("_")[0].trim();
+		    		var right = tag.split("_")[1].trim();
+		    		if 	($scope.arrayAllMaterial[$scope.idSelectedMaterial][left]==null)
+		    			$scope.arrayAllMaterial[$scope.idSelectedMaterial][left]  =  right	 
+		    		else if ($scope.arrayAllMaterial[$scope.idSelectedMaterial][left].includes(right))
+		    			$scope.arrayAllMaterial[$scope.idSelectedMaterial][left] = $scope.arrayAllMaterial[$scope.idSelectedMaterial][left].replace(right, "").trim();
+		    		else    			
+		   	 			$scope.arrayAllMaterial[$scope.idSelectedMaterial][left]  =  ($scope.arrayAllMaterial[$scope.idSelectedMaterial][left]+' ' + right).trim();
+				}   
+				$scope.textDeltaTags =""
+				$scope.compute_choicesAndFields();
+	    	}
+	    
+		    $scope.edit_textDeltaKeys = function() {	 
+		    	var key = $scope.textDeltaKeys.trim() ;
+	    		var keys = key.split(" "),  i;
+
+				for (i = 0; i < keys.length; i++) {
+					if (keys[i]===" " || keys[i]==="")
+						continue;
+		    		if ( $scope.arrayAllMaterial[$scope.idSelectedMaterial][keys[i]]!=null)
+		    			delete $scope.arrayAllMaterial[$scope.idSelectedMaterial][keys[i]]
+		    		else
+		    			$scope.arrayAllMaterial[$scope.idSelectedMaterial][keys[i]]=""
+		    	}  	 	
+				$scope.compute_choicesAndFields();
+	    	}
+	   
+		    $scope.selected_tag = function(k, c, $event) {	 		    
+		    	var s = k+"_"+c;
+		   		s = s.trim();  
+	    		var left  = s.split("_")[0];
+	    		var right = s.split("_")[1];
+
+	    		if ($scope.textSelectedTags.includes(s))
+	    			$scope.textSelectedTags = $scope.textSelectedTags.replace(s, "");
+	    		else    			
+   	 				$scope.textSelectedTags +=  ' ' + s; 	 
+   	 			$scope.textSelectedTags = $scope.textSelectedTags.trim();		
+
+    			if ($scope.textDeltaTags.includes(s))
+	    			$scope.textDeltaTags = $scope.textDeltaTags.replace(s, "");
+	    		else    			
+   	 				$scope.textDeltaTags +=  ' ' + s; 	 
+	   	 		$scope.textDeltaTags = $scope.textDeltaTags.trim();		
+	   	 		
+	   	 		if ($scope.textDeltaKeys.includes(left))
+		    		$scope.textDeltaKeys = $scope.textDeltaKeys.replace(left, "");
+		    	else    			
+	   	 			$scope.textDeltaKeys +=  ' ' + left; 	 	    	 						
+   	 			$scope.textDeltaKeys = $scope.textDeltaKeys.trim();		
+	   	 		$scope.textSelectedTags = $scope.textSelectedTags.trim();	  	 		
+		   	 	$scope.updated_textSelectedTags();
+		    }
+
+			
+		    $scope.compute_arrayArrays = function(){
+		    	$scope.arrayArrayChoices=new Object()
+		    	$.each( $scope.arrayChoices, function (k, l){
+	    			var choiceKind = l.split("_")[0]		    			
+	    			if ( !$scope.arrayArrayChoices.hasOwnProperty(choiceKind)){
+	    				$scope.arrayArrayChoices[ choiceKind ]=[]	    	
+						var l
+				    	for (l=0;l<$scope.arrayChoices.length;l++){
+			    			var kind = $scope.arrayChoices[l].split("_")[0]
+			    			if (kind===choiceKind){
+				    			var choice = $scope.arrayChoices[l].split("_")[1]
+				    			$scope.arrayArrayChoices[ choiceKind ].push(choice); 
+							}
+				    	}	
+		    		}		    		 
+				})	
+		    }
+
+		    $scope.compute_tree = function(){  
+		   	 	$scope.tree=new Object()
+		   	 	$.each($scope.arrayAllMaterial, function(k1, v1) {
+					$.each(v1, function(k2, v2) {
+						if( k2==="Tree") {
+							var vs = v2.split(" ")	
+							for  (var m=0; m<vs.length; m++){	
+								var v3 = vs[m].split("/")
+								var p = ""
+								for  (var l=0;l<v3.length;l++){
+									if (l>0)
+										p+="/"
+									p = p + v3[l]
+									$scope.tree[p] = k1
+								}						
+							}
+						}
+					})
+				})				   	
+				$scope.treekeys = Object.keys( $scope.tree ) 	
+		    }
+		   
+		    $scope.select_Material = function(id){   
+		   	 	if ($scope.booleanShiftPressed)
+					return;
+				$('img').removeClass("selected")
+			    $('img[id="'+id+'"').addClass("selected")
+
+				$('a[alt="materiallink"').removeClass("video-thumbnail")
+				$('a[alt="materiallink"').removeClass("link-thumbnail")
+				if ($scope.arrayAllMaterial[id].Type==="Video")
+					$('a[alt="materiallink"').addClass("video-thumbnail")
+				else
+					$('a[alt="materiallink"').addClass("link-thumbnail")
+				$scope.idSelectedMaterial = id
+		    }
+		    
+		   	$scope.save_Json = function(){   	
+		   		var newjson = $scope.arrayAllMaterial 
+		   		  		 
+		 		 $http({
+				        method : "POST",
+				        url : "http://localhost:8080/save_Json",
+				        data: JSON.stringify(newjson),
+				        contentType: "application/json; charset=utf-8",
+				        dataType: "json"
+				    }).then(
+					    function mySuccess(response) {
+							console.log( response.data );																		   
+						}, 
+						function myError(response) {
+					        $scope.myWelcome = response.statusText;
+				    });
+		   	}
+	 		
+	 		$scope.getTreePath = function(path) {	 			
+	 			if (path.includes(":"))
+	 				return path.replace(":"," ");
+			   return path
+			};
+			
+	 		$scope.add_material = function(){   		 		
+		 		 $http({
+				        method : "POST",
+				        url : "/get_DetailsFromURL",
+				        dataType: "json",
+				        data: $scope.urlNew,
+				        contentType: "application/json; charset=utf-8"
+				    }).then(
+					    function mySuccess(response) {
+							var materialNew = response.data
+							materialNew.ID=$scope.arrayAllMaterial.length 
+							$scope.arrayAllMaterial.push( materialNew )
+							$scope.select_Material(materialNew.ID)
+						}, 
+						function myError(response) {
+							console.log( response );		
+					        $scope.myWelcome = response.statusText;
+				    });  		
+		   }
+		   $scope.compute_choicesAndFields()
+	 		$scope.select_Material(0)
+			$scope.updated_contributing()
+        });
+
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

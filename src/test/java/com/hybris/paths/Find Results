@@ -1,0 +1,188 @@
+Searching 39 files for "www.googleapis.com" (case sensitive)
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/main/java/com/hybris/paths/MaterialUtil.java:
+   92  			if (id.contains("&"))
+   93  				id=id.substring(0, id.indexOf("&"));
+   94: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/videos?part=snippet&id="+id+"&key="+API_KEY );
+   95  			type = "Video";
+   96  			extractDetails(youTubeURL, youTubeEndpoint);
+   97: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id="+id+"&key="+API_KEY );
+   98  		}
+   99  	
+  ...
+  102  			if (id.contains("/"))
+  103  				id=id.substring(0, id.indexOf("/"));
+  104: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/channels?part=snippet&id="+id+"&key="+API_KEY );
+  105  			type = "YouTubeChannel";
+  106  		}
+  ...
+  109  			if (id.contains("/"))
+  110  				id=id.substring(0, id.indexOf("/"));
+  111: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/channels?part=snippet&forUsername="+id+"&key="+API_KEY );
+  112  			type = "YouTubeChannel";
+  113  		}
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/surefire-reports/com.hybris.paths.TagsTests.txt:
+    4  Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.925 s <<< FAILURE! - in com.hybris.paths.TagsTests
+    5  testYouTubeUtil(com.hybris.paths.TagsTests)  Time elapsed: 0.506 s  <<< ERROR!
+    6: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=1xo-0gCVhTU&key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+    7  	at com.hybris.paths.TagsTests.testYouTubeUtil(TagsTests.java:25)
+    8  
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/surefire-reports/TEST-com.hybris.paths.TagsTests.xml:
+   63    </properties>
+   64    <testcase name="testYouTubeUtil" classname="com.hybris.paths.TagsTests" time="0.506">
+   65:     <error message="Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&amp;id=1xo-0gCVhTU&amp;key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI" type="java.io.IOException"><![CDATA[java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=1xo-0gCVhTU&key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+   66  	at com.hybris.paths.TagsTests.testYouTubeUtil(TagsTests.java:25)
+   67  ]]></error>
+
+7 matches across 3 files
+
+
+Searching 39 files for "API_KEY" (case sensitive)
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/main/java/com/hybris/paths/MaterialUtil.java:
+   13  public class MaterialUtil {
+   14  
+   15: 	@Value("${API_KEY}")
+   16: 	String API_KEY;
+   17  	
+   18  	public String title = null;
+   ..
+   92  			if (id.contains("&"))
+   93  				id=id.substring(0, id.indexOf("&"));
+   94: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/videos?part=snippet&id="+id+"&key="+API_KEY );
+   95  			type = "Video";
+   96  			extractDetails(youTubeURL, youTubeEndpoint);
+   97: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id="+id+"&key="+API_KEY );
+   98  		}
+   99  	
+  ...
+  102  			if (id.contains("/"))
+  103  				id=id.substring(0, id.indexOf("/"));
+  104: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/channels?part=snippet&id="+id+"&key="+API_KEY );
+  105  			type = "YouTubeChannel";
+  106  		}
+  ...
+  109  			if (id.contains("/"))
+  110  				id=id.substring(0, id.indexOf("/"));
+  111: 			youTubeEndpoint = new URL("https://www.googleapis.com/youtube/v3/channels?part=snippet&forUsername="+id+"&key="+API_KEY );
+  112  			type = "YouTubeChannel";
+  113  		}
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/main/resources/application.properties:
+    1: API_KEY=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+    2  
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/test/java/com/hybris/paths/TagsTests.java:
+   14  public class TagsTests {
+   15  
+   16: 	@Value("${API_KEY}")
+   17: 	String API_KEY;
+   18  
+   19  	@Autowired
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/classes/application.properties:
+    1: API_KEY=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+    2  
+
+10 matches across 4 files
+
+
+Searching 39 files for "1xo-0gCVhTU" (case sensitive)
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/main/java/com/hybris/paths/MaterialUtil.java:
+   88  		String id;
+   89  		URL youTubeEndpoint =null; 
+   90: 		if (youTubeURL.contains("v=")) { // E.g. https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1191s
+   91  			id = youTubeURL.substring( youTubeURL.indexOf("v=")+2);
+   92  			if (id.contains("&"))
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/main/resources/alltags.json:
+  374    "Title" : "Introduction to Microservices, Docker, and Kubernetes",
+  375    "Description" : "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\n\nDeployment YAML: https://pastebin.com/rZa9Dm1w\n\nDockerfile: https://pastebin.com/SZA26rbg\n\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\n\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8",
+  376:   "Thumb" : "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg",
+  377    "Duration" : "55M8S",
+  378:   "Url" : "https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1196s",
+  379    "PublishedAt" : "2017-11-08T04:50:19.000Z",
+  380    "Type" : "Video",
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/test/java/com/hybris/paths/TagsTests.java:
+   23  	public void testYouTubeUtil() throws Exception {
+   24  		
+   25: 		String json = ytUtil.get("https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1191s",0);
+   26  		assertEquals( ytUtil.title, "Introduction to Microservices, Docker, and Kubernetes"  );
+   27: 		assertEquals( ytUtil.thumb, "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg"  );
+   28  		assertEquals( ytUtil.description, "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\\n\\nDeployment YAML: https://pastebin.com/rZa9Dm1w\\n\\nDockerfile: https://pastebin.com/SZA26rbg\\n\\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\\n\\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8"  );
+   29  		assertEquals( ytUtil.publishedAt, "2017-11-08T04:50:19.000Z"  );
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/classes/alltags.json:
+  374    "Title" : "Introduction to Microservices, Docker, and Kubernetes",
+  375    "Description" : "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\n\nDeployment YAML: https://pastebin.com/rZa9Dm1w\n\nDockerfile: https://pastebin.com/SZA26rbg\n\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\n\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8",
+  376:   "Thumb" : "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg",
+  377    "Duration" : "55M8S",
+  378:   "Url" : "https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1196s",
+  379    "PublishedAt" : "2017-11-08T04:50:19.000Z",
+  380    "Type" : "Video",
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/surefire-reports/com.hybris.paths.TagsTests.txt:
+    4  Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.725 s <<< FAILURE! - in com.hybris.paths.TagsTests
+    5  testYouTubeUtil(com.hybris.paths.TagsTests)  Time elapsed: 0.478 s  <<< ERROR!
+    6: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=1xo-0gCVhTU&key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+    7  	at com.hybris.paths.TagsTests.testYouTubeUtil(TagsTests.java:25)
+    8  
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/surefire-reports/TEST-com.hybris.paths.TagsTests.xml:
+   63    </properties>
+   64    <testcase name="testYouTubeUtil" classname="com.hybris.paths.TagsTests" time="0.478">
+   65:     <error message="Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&amp;id=1xo-0gCVhTU&amp;key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI" type="java.io.IOException"><![CDATA[java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=1xo-0gCVhTU&key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+   66  	at com.hybris.paths.TagsTests.testYouTubeUtil(TagsTests.java:25)
+   67  ]]></error>
+
+10 matches across 6 files
+
+
+Searching 39 files for "1xo-0gCVhTU" (case sensitive)
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/main/resources/alltags.json:
+  374    "Title" : "Introduction to Microservices, Docker, and Kubernetes",
+  375    "Description" : "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\n\nDeployment YAML: https://pastebin.com/rZa9Dm1w\n\nDockerfile: https://pastebin.com/SZA26rbg\n\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\n\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8",
+  376:   "Thumb" : "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg",
+  377    "Duration" : "55M8S",
+  378:   "Url" : "https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1196s",
+  379    "PublishedAt" : "2017-11-08T04:50:19.000Z",
+  380    "Type" : "Video",
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/src/test/java/com/hybris/paths/TagsTests.java:
+   23  	public void testYouTubeUtil() throws Exception {
+   24  		
+   25: 		String json = ytUtil.get("https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1191s",0);
+   26  		assertEquals( ytUtil.title, "Introduction to Microservices, Docker, and Kubernetes"  );
+   27: 		assertEquals( ytUtil.thumb, "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg"  );
+   28  		assertEquals( ytUtil.description, "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\\n\\nDeployment YAML: https://pastebin.com/rZa9Dm1w\\n\\nDockerfile: https://pastebin.com/SZA26rbg\\n\\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\\n\\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8"  );
+   29  		assertEquals( ytUtil.publishedAt, "2017-11-08T04:50:19.000Z"  );
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/classes/alltags.json:
+  374    "Title" : "Introduction to Microservices, Docker, and Kubernetes",
+  375    "Description" : "Learn the basics of Microservices, Docker, and Kubernetes. Code demo starts at 18:45. I mess up the terminal for the first few minutes, but I fix it by 21:50. Audio gets echoey a few times, but it goes away quickly. Sorry about that!\n\nDeployment YAML: https://pastebin.com/rZa9Dm1w\n\nDockerfile: https://pastebin.com/SZA26rbg\n\nHow to Containerize a Node App: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/\n\nPackage-lock Blog Post: https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8",
+  376:   "Thumb" : "https://i.ytimg.com/vi/1xo-0gCVhTU/maxresdefault.jpg",
+  377    "Duration" : "55M8S",
+  378:   "Url" : "https://www.youtube.com/watch?v=1xo-0gCVhTU&t=1196s",
+  379    "PublishedAt" : "2017-11-08T04:50:19.000Z",
+  380    "Type" : "Video",
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/surefire-reports/com.hybris.paths.TagsTests.txt:
+    4  Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.898 s <<< FAILURE! - in com.hybris.paths.TagsTests
+    5  testYouTubeUtil(com.hybris.paths.TagsTests)  Time elapsed: 0.497 s  <<< ERROR!
+    6: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=1xo-0gCVhTU&key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+    7  	at com.hybris.paths.TagsTests.testYouTubeUtil(TagsTests.java:25)
+    8  
+
+/Users/d061192/SoftwareAcademy/PathsII/paths/target/surefire-reports/TEST-com.hybris.paths.TagsTests.xml:
+   63    </properties>
+   64    <testcase name="testYouTubeUtil" classname="com.hybris.paths.TagsTests" time="0.497">
+   65:     <error message="Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&amp;id=1xo-0gCVhTU&amp;key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI" type="java.io.IOException"><![CDATA[java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=1xo-0gCVhTU&key=AIzaSyAavyrkDyj3gd3mAcCJpPtk58O63GFJmNI
+   66  	at com.hybris.paths.TagsTests.testYouTubeUtil(TagsTests.java:25)
+   67  ]]></error>
+
+9 matches across 5 files
